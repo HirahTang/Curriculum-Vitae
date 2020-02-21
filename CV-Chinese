@@ -1,0 +1,221 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+% \usepackage{xunicode}
+% \usepackage{xeCJK}
+% \setmainfont{Minion Pro}
+% \setsansfont{Myriad Pro}
+% \setmonofont{Courier New}
+% \setCJKmainfont{SimSun}
+% \setCJKsansfont{KaiTi}
+% \setCJKmonofont{SimHei}
+%\setCJKmathfont{}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{xeCJK}
+\usepackage{times}
+\setCJKmainfont{AR PL KaitiM GB}
+%
+\setCJKsansfont{WenQuanYi Zen Hei}
+\setCJKmonofont{cwTeXFangSong}
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.85]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{唐汉} % Your first name
+\familyname{\large{数据分析师}} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Curriculum Vitae}
+\address{ }{湖南长沙}
+\mobile{(+86) 135 2047 7862}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{tanghan1995@gmail.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is %the url for the clickable link, the second argument is the url displayed in the %template - this allows special characters to be displayed such as the tilde in this %example
+%\extrainfo{additional information}
+\photo[70pt][0.4pt]{image} % The first bracket is the picture height, the second is %the thickness of the frame around the picture (0pt for no frame)
+%\quote{关注细节信息，注重逻辑推理，实践检验结果；\\具有清晰的逻辑和良好的沟通技巧，英文能力，善于团队合作。}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{学历}
+
+\cvitem{2017--2020}{计算机技术专业（数据分析方向）,硕士,都柏林理工大学}
+% \textit{資訊相關：}
+% \begin{itemize}
+% \item 電子電路實驗 (A+), 計算機網路實驗 (A), 數位電子學 (A-), 產品設計與創新 (A-), 資訊系統原理 (B+)
+% \end{itemize}
+% \textit{管理相關：} 
+% \begin{itemize}
+% \item 行銷管理 (A+), 策略管理 (A), 管理學 (A), 財務管理 (B+), 財務演算法 (B)
+% \end{itemize}
+ % Arguments not required can be left empty
+
+\cvitem{2013--2017}{应用化学专业,学士,北京化工大学}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{项目经验}
+
+\cventry{2019.09\\--\\2020.01}{毕业论文}{\textsc{A Comparison Study on State-of-the-art Minority Class Data Oversampling Techniques for Imbalanced Learning} }{}{}{
+\textit{项目内容和总结：} 
+\begin{itemize}
+\item 阅读文献，研究多种应对不均衡数据分布时采用的过取样方法原理（以SMOTE及其改进算法为主）。
+\item 在多个数据集上计算多种过取样算法的表现，比较它们表现的差别并进行统计学检验。
+\item 根据算法原理，分析改进算法的表现和数据分布形式之间的关系。
+\item \href{https://github.com/HirahTang/MScDissertation_Han_Tang}{\bf \textcolor{blue} {项目链接: Msc Dissertation Han Tang}}
+\end{itemize}
+% \vspace{0.1cm}
+% \textit{對外橋樑：}
+% \begin{itemize}
+% \item 作為對廠商的主要聯絡窗口，管理任務進度與資源。 
+% \item 針對資源、專案進度等，作為客戶與公司內部的橋樑，進行協商；能根據共同目標與各方需求，尋求雙贏。
+% \end{itemize}
+}
+
+\cventry{2019.08\\--\\2019.09}{实习经历}{\textsc{中国邮政储蓄银行 数据分析实习} }{}{}{
+\begin{itemize}
+\item 通过过往客户贷款数据，分析预测客户下个季度信贷违约情况。
+\item 使用Python分析特征相关关系，进行特征工程操作。
+\item 通过Xgboost和Random Forest（随机森林）等多种算法构建模型。
+\item 预测模型在测试数据中召回率达到0.82。
+\end{itemize}
+}
+
+\cventry{2019.03\\--\\2019.04}{课程作业}{\textsc{多标签鸟类种类识别} }{}{}{
+\begin{itemize}
+\item 数据集包含多种鸟类叫声的录音。样本量大小为1000，包含87个种类。
+\item 运用Python中的librosa库将音频文件转化为梅尔波频谱，并修正为统一大小。
+\item 通过fastai库构建卷积神经网络训练模型，模型召回率为0.87。
+\item \href{https://github.com/HirahTang/NIPS-2013-Bird-song-classification}{\bf \textcolor{blue} {项目链接: NIPS2013鸟类种类识别}}
+% \item \textit{C/SQL}
+\end{itemize}
+}
+
+
+%\cventry{2014.11\\--\\2015.4}{团队项目}{\textsc{DVI视频输出板卡 } }{}{}{
+%\begin{itemize}
+%\item 与实验室人员合作，用verilog硬件描述语言描述视频输出板卡的功能模块，在I%SE13.1开发环境中仿真，并结合Xlinx virtex-6 ML605上做板级验证。
+%% \item \textit{C/SQL}
+%\end{itemize}
+%}
+%\cventry{2014.3\\--\\2014.6}{毕业设计}{\textsc{科研信息管理系统的设计与实现}%}{}{}{
+%\begin{itemize}
+%\item 设计基于B/S结构的科研信息管理系统，包括科研成果信息，科研经费信息，统%%计报表的生成 。
+%\item \textit{PHP/ajax/jQeury/MySql}
+%\end{itemize}
+%}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{专业能力}
+\cvitem{熟练}{Python，R，机器学习算法，数据分析和可视化，数据科学相关的常用库（Scikit-learn, Pandas, Numpy, Scipy等）}
+\cvitem{熟悉}{SQL，Web 开发，Java，深度学习算法（CNN，RNN），深度学习常用库（Pytorch, TensorFlow），网页爬虫}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{语言}
+\begin{small}
+% \cvitemwithcomment{中文}{母語}{}
+\cvitemwithcomment{英文}{熟练的听说读写能力}{}
+% \cvitemwithcomment{日文}{略懂}{基本會話能力}
+\end{small}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+%\bigskip
+
+\section{课外活动}
+\cventry{足球}{参加多支足球队}{}{}{}{
+\begin{itemize}
+\item 北京化工大学理学院足球队。
+\item 北京化工大学足球队。
+\item 参加北京市足球业余联赛。
+\item 参加爱尔兰地区级足球业余联赛UCD Super League。
+\end{itemize}
+}  
+% \cventry{領導經驗}{貓空大學ＯＯ校友會會長}{}{}{}{
+% \begin{itemize}
+% \item 率領十一名幹部，經營百人規模的校友會。
+% \end{itemize}
+% }  
+
+% \cventry{商業相關}{資管週公關長}{}{}{}{
+% \begin{itemize}
+% \item 成功爭取知名公司獨家贊助，總金額約為往年的三倍。
+% \end{itemize}
+
+%\section{荣誉奖项}
+%\cvitem{研究生}{研究生学业二等、社会活动二等奖学金}
+%\cvitem{本科}{国家奖学金,校一等奖学金,校三好学生,延安大学数学建模一等奖}
+
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+
+%\recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+
+%\lipsum[1-3] % Dummy text
+
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+\end{document}
